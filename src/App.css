@@ -1,0 +1,256 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8f0; /* Light greenish background */
+  color: #f9fbfa; /* Dark text color for contrast */
+}
+
+/* Header Styles */
+header {
+  background-color: #3b8e3b; /* Green header */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  header a {
+    margin-bottom: 10px; /* Space between links */
+  }
+}
+
+.landing {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Space between left and right */
+  height: 100vh; 
+  width: 100vw;/* Full height of the viewport */
+  padding: 0 20px; /* Side padding */
+  background: url('https://t3.ftcdn.net/jpg/07/94/70/06/360_F_794700684_rGfVdFTp3GRAB1nODQyEwSPavp8l0Ohs.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+}
+
+.landing-content {
+  display: flex; /* Flexbox for inner content */
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center; /* Full width */
+}
+
+.left-side {
+  flex: 1; /* Take available space */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  color: white; /* White text color */
+}
+
+.right-side {
+  flex: 1; /* Take available space */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+h1 {
+  font-size: 2.5rem; /* Size of the heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.get-started-btn {
+  background-color: #3b8e3b; /* Button color */
+  color: white; /* Button text color */
+  text-align: center;
+  padding: 10px 20px;
+  width: 300px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.25rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.get-started-btn:hover {
+  background-color: #2e6a2e; /* Darker color on hover */
+}
+
+p {
+  font-size: 1.25rem; /* Font size for description */
+  color: rgb(16, 240, 27); /* White text color */
+  text-align: center; /* Center text */
+}
+.products {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333; /* Dark text color */
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between cards */
+}
+
+.product {
+  background-color: white; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  padding: 15px;
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.product img {
+  width: 70%; /* Responsive image */
+  border-radius: 5px; /* Slightly rounded image corners */
+  height: 300px; /* Limit height of images */
+  /* Maintain aspect ratio */
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #4CAF50; /* Green color for plant names */
+}
+
+p {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.cart {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333; /* Dark text color */
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between cart items */
+}
+
+.cart-item {
+  display: flex; /* Flex for side-by-side layout */
+  align-items: center; /* Center items vertically */
+  background-color: white; /* Card background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  padding: 15px; /* Inner spacing */
+}
+
+.cart-item img {
+  width: 100px; /* Fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Slightly rounded image corners */
+  margin-right: 15px; /* Space between image and text */
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #4CAF50; /* Green color for plant names */
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+  margin-right: 10px; /* Space between buttons */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.cart-total {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333; /* Dark text for total cost */
+}
+
+.checkout-btn {
+  background-color: #2196F3; /* Blue background for checkout button */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 20px; /* Space above checkout button */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.checkout-btn:hover {
+  background-color: #1976D2; /* Darker blue on hover */
+}

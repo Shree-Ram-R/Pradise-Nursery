@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.landingPage{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(76, 210, 96);
+}
+nav{
+  height: 60px;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right:10px;
+}
+.logo{
+  height: 40px;
+  width: 40px;
+  background: url("https://png.pngtree.com/template/20191018/ourmid/pngtree-logo-plants-taro-leaf-for-room-decoration-fresh-green-plants-to-image_320699.jpg");
+  background-size: cover;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+.logo:hover{
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 50px;
+  
+}
+li{
+  padding: 5px;
+}
+li:hover{
+  background-color: aliceblue;
+  border-radius: 10px;
+
+}
+a{
+  text-decoration: none;
+  color: rgb(27, 217, 46);
+}
+main{
+  height: 75%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  padding-right: 20px;
+  
+}
+.companyName{
+  
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items:center ;
+  justify-content: center;
+}
+h1{
+  color: white;
+  -webkit-text-stroke: 1px rgb(4, 105, 25);
+}
+
+.about{
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  align-items:center ;
+  justify-content: center;
+ 
+}
